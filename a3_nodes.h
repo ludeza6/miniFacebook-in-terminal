@@ -1,6 +1,4 @@
 /********* nodes.h ********
-    Student Name 	= Lucas De la Cruz Zanabria
-    Student Number	= 101338145
 */
 
 #ifndef __A3_NODES_H__
@@ -31,5 +29,6 @@ typedef struct post
     char content[250];
     struct post *next;
 } post_t;
+
 
 #endif
