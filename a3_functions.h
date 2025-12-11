@@ -1,6 +1,4 @@
 /********* a3_functions.h ********
-    Student Name     = Lucas De la Cruz Zanabria
-    Student Number   = 101338145
 */
 
 #ifndef __A3_FUNCTIONS_H__
