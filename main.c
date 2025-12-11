@@ -1,6 +1,4 @@
 /********* main.c ********
-    Student Name     = Lucas De la Cruz Zanabria
-    Student Number   = 101338145
 */
 
 
@@ -232,3 +230,4 @@ int main()
 
     return 0;
 }
+
