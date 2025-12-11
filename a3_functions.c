@@ -1,6 +1,4 @@
 /********* a3_functions.c ********
-    Student Name    = Lucas De la Cruz Zanabria
-    Student Number  = 101338145
 */
 
 #include <stdlib.h>
