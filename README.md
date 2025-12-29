@@ -1,40 +1,62 @@
 # linkedlist-social-network
 
-Social Network Management System
-**SYSC 2006 – Foundations of Imperative Programming
+Overview
+
+This project is a command-line social network management system written in C, designed to demonstrate structured programming, dynamic memory management, and data organization using linked lists.
+
+The application simulates core social network functionality, including user accounts, friend relationships, and post timelines. All data structures are implemented manually without external libraries, with a strong emphasis on correctness, maintainability, and safe memory handling.
+
+This project was developed as part of an undergraduate systems programming course at Carleton University.
+
+**Key Features:
 **
-A command-line social-network simulation built in C, featuring user accounts, password management, friends lists, and post timelines all implemented using dynamically allocated linked lists.
+- Register users with validation rules
+- Update passwords with verification
+- Alphabetical insertion of users using linked lists
+- Add and remove friends
+- Friends stored in sorted linked lists
+- Display complete friends lists
+- Add posts to a user timeline
+- Remove most recent posts (stack-based behavior)
+- Display posts fully or in configurable chunks
+- Loads initial user data from a CSV file
+- Automatically constructs internal data structures on startup
+- All nodes dynamically allocated
+- Explicit cleanup of all allocated memory on program exit
+- Designed to avoid memory leaks and dangling pointers
 
-This project was created as part of the SYSC 2006 course at Carleton University.
 
-📌 Overview
-
-This program simulates a simplified social-media platform. It loads an initial set of users from a CSV file, then provides an interactive menu allowing you to:
-  -  Register users
-  -  Update passwords
-  -  Add/remove friends
-  -  Add/remove posts
-  -  Display posts (optionally in chunks)
-
-All data structures are built manually using linked lists, emphasizing memory management, sorting, and pointer manipulation.
-
-
-**📄 CSV File Format
+**Technical Details
 **
-The program expects a file named user_details.csv in the same directory as the executable. Friends and posts are optional, and the CSV loader automatically inserts them into the correct sorted lists.
 
+Language: C
 
-**🚀 Features
+Core Concepts:
+- Singly linked lists
+- Dynamic memory allocation
+- Pointer manipulation
+- Modular program design (.c / .h separation)
+- Manual memory management
+
+**Input Format:
 **
-✔ Register Users: Users inserted in alphabetical order, password validation (min 8 characters).
-✔ Update Passwords: Requires matching current password, safely updates stored value.
-✔ Manage Posts: Add posts (pushed onto stack), delete most recent post, display all posts or in groups of N.
-✔ Manage Friends: Add friends (sorted insertion), delete friends, display all friends.
-✔ Memory-Safe: All nodes are dynamically allocated and freed on program exit.
+CSV file (user_details.csv) containing user records
+Friends and posts are optional and inserted into sorted structures automatically
 
-
-**🛠 Build & Run
+**Build and Run
 **
-Compile and Run with:
+Compile the program using gcc:
 gcc -g *.c -o A03
+
+Run the executable:
 ./A03
+
+Ensure user_details.csv is located in the same directory as the executable.
+
+**Purpose and Learning Outcomes
+**
+This project was created to strengthen understanding of:
+- Low-level data structures
+- Structured program design
+- Debugging and validation
+- Memory-safe coding practices in C
